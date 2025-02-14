@@ -1,0 +1,116 @@
+html {
+  overscroll-behavior: auto;
+  overflow-x:hidden;
+}
+
+html,body{
+  font-family: Tahoma, Arial, sans-serif; 
+  font-size: 10px;  
+  font-weight: 500; 
+  line-height: 1.5; 
+}
+
+h1, .h1{font-size:3.2rem}   
+h2, .h2{font-size:2.8rem}
+h3, .h3{font-size:2.2rem}
+h4, .h4{font-size:1.8rem}
+h5, .h5{font-size:1.6rem}
+h6, .h6{font-size:1.5rem}  
+
+.serif{font-family:serif}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:  Tahoma, "Segoe UI", Arial, Verdana, sans-serif;
+  font-weight: 600; 
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+} 
+
+.img {
+  width:100%;
+} 
+
+img {
+  vertical-align: middle;
+} 
+
+a {
+  color: inherit;
+}
+
+.text-caption {
+  font-size:80%;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.opacity-half {
+  opacity: 0.5;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+
+small, .small {
+  font-size:80%;
+}
+
+sub,sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {  
+  border: 0;
+  border-top: 0.1rem solid #eee;
+  margin: 2rem 0;
+} 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pure-HTML-CSS-Project-7</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-basic.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3>
+                Upload your files:
+            </h3>
+            <ul class="files-upload">
+                <li class="file-wrapper">
+                    <div class="file-icon d-inline">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <div class="file-spec d-inline">
+                        <span class="name">File.xls</span>
+                        <span class="size" data-size="3"></span>
+                        <div class="progress">
+                            <div class="limit" data-sit="complete"></div>
+                        </div>
+                    </div>
+                    <div class="upload-sit d-inline">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </li>
+                <input type="checkbox" id="cancel-2" class="canceler">
+                <li class="file-wrapper">
+                    <div class="file-icon d-inline">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="file-spec d-inline">
+                        <span class="name">File.pdf</span>
+                        <span class="size" data-size="16"></span>
+                        <div class="progress">
+                            <div class="limit" data-sit="" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="upload-sit d-inline">
+                        <label for="cancel-2">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                </li>
+                <input type="checkbox" id="cancel-3" class="canceler">
+                <li class="file-wrapper">
+                    <div class="file-icon d-inline">
+                        <i class="fa-solid fa-file-video"></i>
+                    </div>
+                    <div class="file-spec d-inline">
+                        <span class="name">File.mp4</span>
+                        <span class="size" data-size="256"></span>
+                        <div class="progress">
+                            <div class="limit" data-sit="" style="width: 7%"></div>
+                        </div>
+                    </div>
+                    <div class="upload-sit d-inline">
+                        <label for="cancel-3">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                </li>
+                <input type="checkbox" id="cancel-4" class="canceler">
+                <li class="file-wrapper">
+                    <div class="file-icon d-inline">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <div class="file-spec d-inline">
+                        <span class="name">File.css</span>
+                        <span class="size" data-size="5"></span>
+                        <div class="progress">
+                            <div class="limit" data-sit="" style="width:95%"></div>
+                        </div>
+                    </div>
+                    <div class="upload-sit d-inline">
+                        <label for="cancel-4">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="upload-btn">
+                <input id="upload-btn" type="file" hidden>
+                <label for="upload-btn">
+                    <i class="fa-solid fa-upload"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

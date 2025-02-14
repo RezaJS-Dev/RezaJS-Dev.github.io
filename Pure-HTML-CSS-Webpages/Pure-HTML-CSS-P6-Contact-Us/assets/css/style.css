@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+:root {
+    --bc: #F4E4F3;
+    --pc: #B544AA;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-pc {
+    color: var(--pc);
+}
+
+body {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bc);
+    font-family: "Victor Mono";
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Sora";
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    background-color: #F9F9F9;
+    align-self: center;
+    border-radius: 3rem 0 3rem 0;
+    box-shadow: 0px 5px 9px -1px #999;
+}
+
+.content {
+    padding: 3rem 4rem;
+    gap: 2rem;
+}
+
+.left-sec {
+    width: 28%;
+    position: relative;
+}
+
+.left-sec::before {
+    content: '';
+    background-color: #ac9aae;
+    width: 2px;
+    height: 69%;
+    position: absolute;
+    right: -36px;
+    top: 18%;
+}
+
+.left-sec h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+.address-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    margin-top: 30%;
+}
+
+.address-wrapper:hover > div.info:not(:hover) {
+    opacity: 0.4;
+    transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    flex-grow: 0.25;
+    padding: 0;
+    opacity: 1;
+}
+
+.info a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    margin: 2.5rem 0;
+    & i {
+        font-size: 3rem;
+        padding-bottom: 0.5rem;
+        color: var(--pc);
+    }
+    & span {
+        font-size: 1.3rem;
+    }
+}
+
+.info,
+.info a,
+.info > a > i,
+.info > a > span {
+    transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+}
+
+.right-sec {
+    width: 72%;
+    padding-left: 6rem;
+}
+
+.heading {
+
+}
+
+.heading h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.heading p {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    & input {
+        caret-color: var(--pc);
+        & textarea {
+            caret-color: var(--pc);
+        }
+    }
+}
+
+.input-wrapper {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.input-wrapper input {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #EFEEEE;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.textarea-wrapper {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.textarea-wrapper textarea {
+    width: 100%;
+    border: none;
+    background-color: #EFEEEE;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #111;
+    resize: none;
+    min-height: 10rem;
+}
+
+.input-wrapper input:focus ,
+.textarea-wrapper textarea:focus {
+    outline: 2px solid #b544aa;
+}
+
+.btn {
+    width: 20%;
+    min-width: 100px;
+    height: 4rem;
+    border: none;
+    background-color: var(--pc);
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #EEE;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+}
+
+.btn:hover {
+    background-color: #91079d ;
+}
+
+@media screen and (max-width:992px) {
+
+    .left-sec::before {
+        content: none;
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        padding: 2rem 3rem;
+        gap: 1rem;
+    }
+
+    .left-sec {
+        width: 100%;
+    }
+
+    .address-wrapper {
+        margin-top: 0;
+    }
+
+    .info {
+        flex-basis: 0;
+        margin: 0;
+    }
+
+    .right-sec {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:530px) {
+    
+    .info > a > :last-child {
+        display: none;
+    }
+}

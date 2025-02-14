@@ -1,0 +1,320 @@
+:root {
+    --bc: rgba(221, 225, 231, 0.99);
+    --tc: rgb(69, 119, 138);
+    --complete: rgb(79 152 44 / 0.8);
+    --inprogress: rgb(202, 38, 38);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bc);
+    position: relative;
+}
+
+.keyboard-layout {
+    width: 1100px;
+    display: flex;
+    background-color: var(--bc);
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px rgba(255,255,255,0.7), 2px 2px 5px rgba(96,105,122,0.3);
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+    flex-basis: 100%;
+    min-width: 1100px;
+    margin: auto;
+    justify-content: center;
+}
+
+div.btn-wrapper {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+}
+
+.row input {
+    box-shadow: -3px -3px 7px rgba(255,255,255,0.7), 2px 2px 5px rgba(96,105,122,0.3);
+    background-color: var(--bc);
+    color: transparent;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.row label:not([for="caps"]) {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: #808080;
+    display: flex;
+    position: absolute;
+}
+
+/* button labels */
+
+.row label::before {
+    content: attr(for)"";
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+label[for="caps"]::before {
+    content: '';
+    margin: 0;
+}
+
+label[for="caps"] i {
+    font-size: 2.5rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+    color: #808080;
+}
+
+/* buttons alternate size */
+
+div.space {
+    width: 50%;
+}
+
+div.enter {
+    width: 100px;
+}
+
+/* change on press style */
+
+.row input:focus + label {
+    color: #3598dc;
+    font-size: 18px;
+}
+
+.row input:focus {
+    box-shadow: inset -3px -3px 7px rgba(255,255,255,0.7), inset 2px 2px 5px rgba(96,105,122,0.3);
+}
+
+input#caps:checked ~ div.row > div.btn-wrapper > label::before {
+    text-transform: uppercase;
+}
+
+/* caps button style */
+
+label[for="caps"] {
+    box-shadow: -3px -3px 7px rgba(255,255,255,0.7), 2px 2px 5px rgba(96,105,122,0.3);
+    background-color: var(--bc);
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+input#caps:checked ~ div.row div.btn-wrapper label[for="caps"] {
+    box-shadow: inset -3px -3px 7px rgba(255,255,255,0.7), inset 2px 2px 5px rgba(96,105,122,0.3);
+}
+
+@font-face {
+    font-family: "Font Awesome";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(../webfonts/fa-regular-400.woff2) format("woff2"),
+         url(../webfonts/fa-regular-400.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2"),
+       url(../webfonts/fa-solid-900.ttf) format("truetype");
+}
+
+i.square-caret-up {
+    font-family: "Font Awesome" !important;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+i.square-caret-up::before {
+    content: "\f151";
+}
+
+input#caps:checked ~ div.row div.btn-wrapper label[for="caps"] i.square-caret-up::before {
+    color: #3498db;
+    font-weight: 900;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+
+    .keyboard-layout {
+        width: 825px;
+        border-radius: 7px;
+        padding: 3rem;
+        gap: 1.5rem;
+    }
+
+    .row {
+        gap: 1.5rem;
+        min-width: 825px;
+    }
+
+    div.btn-wrapper {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .row input {
+        border-radius: 0.4rem;
+    }
+
+    .row label:not([for="caps"]) {
+        font-size: 1.7rem;
+    }
+
+    label[for="caps"] i {
+        font-size: 1.9rem;
+    }
+
+    div.space {
+        width: 50%;
+    }
+
+    div.enter {
+        width: 75px;
+    }
+
+    .row input:focus + label {
+      font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+
+    .keyboard-layout {
+        width: 650px;
+        height: 320px;
+        border-radius: 5px;
+        padding: 2.25rem;
+        gap: 1.125rem;
+    }
+
+    .row {
+        gap: 1.125rem;
+        min-width: 650px;
+    }
+
+    div.btn-wrapper {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .row input {
+        border-radius: 0.3rem;
+    }
+
+    .row label:not([for="caps"]) {
+        font-size: 1.4rem;
+    }
+
+    label[for="caps"] i {
+        font-size: 1.5rem;
+    }
+
+    div.space {
+        width: 20%;
+    }
+
+    div.enter {
+        width: 48px;
+    }
+
+    .row input:focus + label {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .keyboard-layout {
+        width: 412px;
+        height: 280px;
+        border-radius: 5px;
+        padding: 1.2rem;
+        row-gap: 0.2rem;
+        column-gap: 0;
+    }
+
+    .row {
+        column-gap: 0.8rem;
+        row-gap: 0;
+        min-width: 412px;
+    }
+
+    div.btn-wrapper {
+        width: 3rem;
+        height: 4rem;
+    }
+
+    .row input {
+        border-radius: 0.3rem;
+    }
+
+    .row label:not([for="caps"]) {
+        font-size: 1.6rem;
+    }
+
+    label[for="caps"] i {
+        font-size: 1.6rem;
+    }
+
+    div.space {
+        width: 20%;
+    }
+
+    div.enter {
+        width: 48px;
+    }
+
+    div.enter label:not([for="caps"]),
+    div.space label:not([for="caps"]) {
+        font-size: 1.2rem;
+    }
+
+    .row input:focus + label {
+        font-size: 1.4rem;
+    } 
+    
+    .row input[id="ENTER"]:focus ~ label[for="ENTER"], 
+    .row input[id="SPACE"]:focus ~ label[for="SPACE"] {
+        font-size: 1.1rem;
+    }
+}
+

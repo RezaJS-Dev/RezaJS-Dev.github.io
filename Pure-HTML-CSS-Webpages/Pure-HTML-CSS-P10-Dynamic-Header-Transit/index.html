@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pure-HTML-CSS-Project-10</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-basic.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/loading-animation.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/line-awesome.min.css">
+    <!-- Google font backups due to 403 -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/lato-backup.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/poppins-backup.css">
+</head>
+<body>
+    <div class="loading-animation">
+        <div class="loading">
+            <div class="loading_circle"></div>
+            <div class="loading_circle"></div>
+            <div class="loading_circle"></div>
+            <div class="loading_circle"></div>
+            <div class="loading_circle"></div>
+            <div class="loading_circle"></div>
+        </div>
+    </div>
+    <header class="home">
+        <video autoplay="" loop="" muted="true" disablepictureinpicture="true">
+            <source src="./assets/videos/vid.mp4" type="video/mp4">
+        </video>
+        <div class="nav-container">
+            <div class="logo">
+                <img class="img" src="./assets/images/logo.png">
+            </div>
+            <input type="checkbox" id="menu-btn" hidden>
+            <label for="menu-btn" class="menu-btn-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <ul class="side-menu">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">COMMERCIAL</a>
+                </li>
+                <li>
+                    <a href="#">BLOGS</a>
+                </li>
+                <li>
+                    <a href="#">SUPPORT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>transit with comfort</h1>
+            <button popovertarget="popover-apply" popovertargetaction="show">Explore</button>
+            <form>
+                <input type="text" name="" placeholder="Type here...">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </header>
+
+    <div class="modal-wrapper" id="popover-apply" popover="manual">
+        <div class="popover-apply-container">
+
+            <div class="popover-apply-title">
+                <span>Transit Pricing</span>
+                <button popovertarget="popover-apply" popovertargetaction="hide" >
+                    <i class="las la-times"></i>
+                </button>
+            </div>
+            
+            <div class="popover-apply-contents">
+
+                <div class="pricing-tab">
+                    
+                    <!-- Tab 1 -->
+                    <div class="pricing-header">
+                        <span>Basic</span>
+                        <div class="price">
+                            <span class="sign">$</span>
+                            <span class="currency">99</span>
+                            <span class="cent">.99</span>
+                            <span class="month">/MON</span>
+                        </div>
+                        <div class="colored-tab"></div>
+                    </div>
+
+                    <ul class="pricing-body">
+                        <li><i class='las la-check-square'></i>Limitted Support</li>
+                        <li><i class='las la-check-square'></i>Online Tracking</li>
+                        <li><i class='las la-check-square'></i>Single Project</li>
+                        <li><i class='las la-times'></i>Paid Warehouse</li>
+                        <li><i class='las la-times'></i>Only Shipping Tax</li>
+                    </ul>
+
+                    <button class="select-btn">
+                        <span>Select</span>
+                    </button>
+
+                </div>
+
+                <!-- Tab 2 -->
+                <div class="pricing-tab">
+
+                    <div class="pricing-header">
+                        <span>Standard</span>
+                        <div class="price">
+                            <span class="sign">$</span>
+                            <span class="currency">199</span>
+                            <span class="cent">.99</span>
+                            <span class="month">/MON</span>
+                        </div>
+                        <div class="colored-tab"></div>
+                    </div>
+
+                    <ul class="pricing-body">
+                        <li><i class='las la-check-square'></i>24/7 Support</li>
+                        <li><i class='las la-check-square'></i>Online Tracking</li>
+                        <li><i class='las la-check-square'></i>Multiple Projects</li>
+                        <li><i class='las la-check-square'></i>Free Warehouse</li>
+                        <li><i class='las la-times'></i>Only Shipping Tax</li>
+                    </ul>
+
+                    <button class="select-btn">
+                        <span>Select</span>
+                    </button>
+
+                </div>
+
+                <!-- Tab 3 -->
+                <div class="pricing-tab">
+
+                    <div class="pricing-header">
+                        <span>Premium</span>
+                        <div class="price">
+                            <span class="sign">$</span>
+                            <span class="currency">299</span>
+                            <span class="cent">.99</span>
+                            <span class="month">/MON</span>
+                        </div>
+                        <div class="colored-tab"></div>
+                    </div>
+
+                    <ul class="pricing-body">
+                        <li><i class="las la-check-square"></i>24/7 support</li>
+                        <li><i class="las la-check-square"></i>Online Tracking</li>
+                        <li><i class="las la-check-square"></i>Multiple Projects</li>
+                        <li><i class="las la-check-square"></i>Free Warehouse</li>
+                        <li><i class="las la-check-square"></i>No Tax</li>
+                    </ul>
+
+                    <button class="select-btn">
+                        <span>Select</span>
+                    </button>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

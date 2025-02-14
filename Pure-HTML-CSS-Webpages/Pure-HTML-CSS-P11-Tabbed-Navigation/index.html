@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pure-HTML-CSS-Project-11</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-basic.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Google font backups due to 403 -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/poppins-backup.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Tabbed Navigation</h1>
+            <input id="home" type="radio" name="tabbed" checked hidden>
+            <input id="game" type="radio" name="tabbed" hidden>
+            <input id="profile" type="radio" name="tabbed" hidden>
+            <input id="contact" type="radio" name="tabbed" hidden>
+            <input id="donate" type="radio" name="tabbed" hidden>
+            <ul class="items">
+                <li>
+                    <label for="home">
+                        Home
+                    </label>
+                </li>
+                <li>
+                    <label for="game">
+                        Game
+                    </label>
+                </li>
+                <li>
+                    <label for="profile">
+                        Profile
+                    </label>
+                </li>
+                <li>
+                    <label for="contact">
+                        Contact Us
+                    </label>
+                </li>
+                <li>
+                    <label for="donate">
+                        Donate
+                    </label>
+                </li>
+                <div class="selected"></div>
+            </ul>
+            <article>
+                <section data-relation="home">
+                    <h3>Home Tab</h3>
+                    <p>Laborum cupidatat quis deserunt amet aliquip est reprehenderit labore elit et officia nulla sit amet officia amet in ad ex esse commodo cupidatat. Pariatur mollit laborum dolor nisi culpa adipisicing aliquip ex nulla occaecat reprehenderit culpa in anim amet occaecat eu ut tempor in fugiat mollit ut ut in officia ea tempor elit exercitation.</p>
+                </section>
+                <section data-relation="game">
+                    <h3>Game Tab</h3>
+                    <p>Nulla cupidatat do occaecat ea irure ullamco elit et non fugiat veniam duis ullamco cupidatat sint in aute dolore. Officia eiusmod sed adipisicing culpa dolore occaecat est sit aute ut pariatur cillum est sit est commodo reprehenderit dolore occaecat in cillum.</p>
+                    <div class="games">
+                        <div>
+                            <img class="img" src="./assets/images/games/1.jpg" alt="Top Wars"></img>
+                            <div>
+                                <h6>Top Wars</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/2.jpg" alt="Maze"></img>
+                            <div>
+                                <h6>Maze</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/3.jpg" alt="Gears"></img>
+                            <div>
+                                <h6>Gears</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/4.jpg" alt="Caveman"></img>
+                            <div>
+                                <h6>Caveman</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/5.jpg" alt="Astronauts"></img>
+                            <div>
+                                <h6>Astronauts</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/6.jpg" alt="Phunky Fungi"></img>
+                            <div>
+                                <h6>Phunky Fungi</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/7.jpg" alt="Heroes"></img>
+                            <div>
+                                <h6>Heroes</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                        <div>
+                            <img class="img" src="./assets/images/games/8.jpg" alt="Creatures"></img>
+                            <div>
+                                <h6>Creatures</h6>
+                                <p>Play and earn coins</p>
+                            </div>
+                            <button>Launch</button>
+                        </div>
+                    </div>
+                </section>
+                <section data-relation="profile">
+                    <div class="first-seg">
+                        <h3>Profile Tab</h3>
+                        <p>Laborum cupidatat quis deserunt amet aliquip est reprehenderit labore elit et officia nulla sit amet officia amet in ad ex esse commodo cupidatat. Ea nisi amet id in in incididunt dolor ut ullamco enim duis cillum excepteur elit id pariatur laboris aliqua.</p>
+                    </div>
+                    <div class="second-seg">
+                        <div class="button-container">
+                            <span>&#x02022; Option One</span>
+                            <input type="checkbox" id="opt-1" hidden>
+                            <label for="opt-1">
+                                <i class="circle-toggle sex"></i>
+                            </label>
+
+                            <span>&#x02022; Option Two</span>
+                            <input type="checkbox" id="opt-2" hidden checked>
+                            <label for="opt-2">
+                                <i class="circle-toggle on-off"></i>
+                            </label>
+
+                            <span>&#x02022; Button One</span>
+                            <input type="checkbox" id="btn-1" hidden>
+                            <label class="profile-btn" for="btn-1"></label>
+
+                            <span>&#x02022; Button Two</span>
+                            <input type="checkbox" id="btn-2" hidden checked>
+                            <label class="profile-btn" for="btn-2"></label>
+
+                            <span>&#x02022; Button Three</span>
+                            <input type="checkbox" id="btn-3" hidden>
+                            <label class="profile-btn" for="btn-3"></label>
+                        </div>
+                    </div>
+                </section>
+                <section data-relation="contact">
+                    <h3>Contact Us Tab</h3>
+                    <p>Qui sunt eiusmod ea tempor labore excepteur dolore in mollit.</p>
+                </section>
+                <section data-relation="donate">
+                    <h3>Donate Tab</h3>
+                    <p>Lorem ipsum voluptate laborum duis dolore deserunt ut culpa sunt ut exercitation et ea incididunt enim occaecat nostrud amet occaecat est culpa eu dolor in anim sit et laboris excepteur id ullamco laborum tempor consequat aliquip magna laborum commodo consectetur cupidatat voluptate velit amet ea ut irure cupidatat excepteur proident sit adipisicing anim excepteur sit ad dolore sit pariatur nisi veniam commodo.</p>
+                </section>
+            </article>
+        </nav>
+    </div>
+</body>
+</html>

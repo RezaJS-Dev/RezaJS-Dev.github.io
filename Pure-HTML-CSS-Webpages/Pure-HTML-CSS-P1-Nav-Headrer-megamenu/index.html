@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pure-HTML-CSS-Project-1-Header-Navigation</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/style-basic.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="container"> 
+
+    <div class="header-inner">
+      <div class="header-container-items circle" id="logobg">
+        <div id="isolated">
+          <div class="oval R"></div>
+          <div class="oval G"></div>
+          <div class="oval B"></div>
+        </div>
+      </div>
+      <span class="header-container-items logo-text">لوگو و عنوان سایت</span>
+
+      <div class="header-container-items">
+        <a href="#" class="login-button icon-holder">
+          <i class="material-icons">group_add</i>
+          <span class="login-button-text">
+            ورود <strong>|</strong> ثبت نام
+          </span>
+        </a>
+      </div>
+      <button class="header-container-items cart cart-button" popovertarget="popover-cart" popovertargetaction="show" accesskey="c">
+          <div class="icon-holder icon-holder-24 badge-holder">
+            <i class="material-icons">add_shopping_cart</i>
+            <span class="cartbadge"></span>
+            <span class="tooltip">Popover Cart</span>
+          </div>
+      </button>
+    </div>
+
+    <nav class="display-flex h6">
+      <ul class="nav-menu-btn-wrapper">
+
+        <div class="btn-animated-border display-flex" id="mega-menu-btn">
+          <div class="menu-btn-container-wrapper">
+            <input type="checkbox" id="menu-btn" accesskey="m" title="Alt + Shift + M" hidden>
+            <label for="menu-btn" class="menu-btn-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <span class="seperator"></span>
+          
+            <!-- Mega Menu -->
+            <div class="megamenu">
+
+              <form class="search-container hide-on-large" name="small-search-box">
+                  <input type="search" placeholder="واژه کلیدی..." name="small-search-box">
+                  <button type="submit" name="small-search-box">
+                    <i class="material-icons">search</i>
+                  </button>
+              </form>
+
+              <div class="menu-contents-wrapper">
+                <ul class="first-menu">
+                  <li class="hover-show">                            <!-- 1 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item show no-decor">
+                        <i class="material-icons">comment</i>
+                        <p>ورود به انجمن</p>
+                      </a>
+                      <span class="menu-next"></span>
+                    </div>
+                    <div class="menu-child-wrapper">
+                      <div class="list-container">
+                        <ul class="list">
+                          <div class="list-item-wrapper">
+                            <a href="#" class="list-item no-decor">
+                              <p>اخبار مربوط به سایت و انجمن</p>
+                              <span class="menu-next"></span>
+                            </a>
+                            <ul class="list-text">
+                              <li><a href="#" class="no-decor">اخبار انجمن</a></li>
+                              <li><a href="#" class="no-decor">پیشنهادات، انتقادات و مشکلات سایت و انجمن</a></li>
+                              <li><a href="#" class="no-decor">نحوه استفاده از ابزارهای انجمن</a></li>
+                            </ul>
+                          </div>
+                          <div class="list-item-wrapper">
+                            <a href="#" class="list-item no-decor">
+                              <p>مباحث و مشکلات</p>
+                              <span class="menu-next"></span>
+                            </a>
+                            <ul class="list-text">
+                              <li><a href="#" class="no-decor">مباحث و مشکلات مرورگرها</a></li>
+                              <li><a href="#" class="no-decor">مباحث مرتبط با اینترنت و شبکه</a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات نرم افزاری</a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات Office</a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات آنتی ویروس ها</a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات سیستم عامل ها</a></li>
+                              <li><a href="#" class="no-decor">مشكلات حل شده</a></li>
+                              <li><a href="#" class="no-decor">مشكلات در دست بررسي</a></li>
+                            </ul>
+                          </div>
+                          <div class="list-item-wrapper">
+                            <a href="#" class="list-item no-decor">
+                              <p>نرم افزار</p>
+                              <span class="menu-next"></span>
+                            </a>
+                            <ul class="list-text">
+                              <li><a href="#" class="no-decor">نرم افزارهای گرافیکی </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای رایت CD و DVD</a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای اینترنت و شبکه</a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای بهینه سازی</a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مدیریت درایورها </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مبدل/ویرایشگر صوتی و تصویری </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای فارسی </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مدیریت اسناد و فایلهای PDF </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای فشرده سازی </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای تصویربرداری و زیباسازی محیط ویندوز </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای کاربردی </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مالتی مدیا </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مجازی سازی ویندوز </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مهندسی </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای مدیریت هارد دیسک </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای پشتیبان گیری از اطلاعات </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای بازیابی اطلاعات </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای حذف و پاکسازی اطلاعات </a></li>
+                              <li><a href="#" class="no-decor">نرم افزارهای فایروال</a></li>
+                            </ul>
+                          </div>
+                          <div class="list-item-wrapper">
+                            <a href="#" class="list-item no-decor">
+                              <p>سخت افزار</p>
+                              <span class="menu-next"></span>
+                            </a>
+                            <ul class="list-text">
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع Ram و CPU </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع موس و کیبورد </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع کارت گرافیک و مانیتور </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع کارت صدا </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع کارت شبکه و مودم </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع مادربرد </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع هارد دیسک و درایو SSD </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع لپ تاپ </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع فلش مموری USB </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع پرینتر </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع رایتر و درایو نوری </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات انواع Power </a></li>
+                              <li><a href="#" class="no-decor">مباحث و مشکلات متفرقه سخت افزاری </a></li>
+                            </ul>
+                          </div>
+                        </ul>
+                        <div class="end-list">
+                          <div class="border-bl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hover-show">                            <!-- 2 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">code</i>
+                        <p>آموزش برنامه نويسی</p>
+                      </a>
+                      <span class="menu-next"></span>
+                    </div>
+                    <div class="menu-child-wrapper">
+                      <div class="list-container">
+                        <ul class="list">
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">زبان های نشانه گذاری HTML و  CSS</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">جاوا اسكريپت</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">پايتون</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">كتابخانه ها</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">برنامه نويسي سرور</a>
+                          </li>
+                        </ul>
+                        <div class="end-list">
+                          <div class="border-bl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hover-show">                            <!-- 3 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">school</i>
+                        <p>آموزش نرم افزار</p>
+                      </a>
+                      <span class="menu-next"></span>
+                    </div>
+                    <div class="menu-child-wrapper">
+                      <div class="list-container"> 
+                        <ul class="list">
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای مهندسی</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای مالتی مدیا</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای گرافیکی</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای پارتیشن بندی</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای امنیتی و آنتی ویروس</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای پشتیبان گیری</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای بازیابی اطلاعات</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای بهینه سازی و تعمیر ویندوز</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای فشرده ساز و ساخت ستاپ</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نصب ویندوز و بوتیبل کردن</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزار های رایت و مدیریت ایمیج</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">نرم افزارهای تبدیل صوتی و تصویری</a>
+                          </li>                
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">مقالات متفرقه</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">درخواست آموزش</a>
+                          </li>
+                        </ul>
+                        <div class="end-list">
+                          <div class="border-bl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hover-show">                            <!-- 4 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">devices_other</i>
+                        <p>دانلود نرم افزار</p>
+                      </a>
+                      <span class="menu-next"></span>
+                    </div>
+                    <div class="menu-child-wrapper">
+                      <div class="list-container">
+                        <ul class="list">
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">اينترنت</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">مالتی مديا</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">امنيتی</a>
+                          </li>
+                          <li class="list-item-wrapper">
+                            <a href="#" class="menu-item no-decor">موبايل</a>
+                          </li>
+                        </ul>
+                        <div class="end-list">
+                          <div class="border-bl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>                                               <!-- 5 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">memory</i>
+                        <p>تازه های تكنولوژی</p>
+                      </a>
+                    </div>
+                  </li> 
+                  <li>                                               <!-- 6 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">feedback</i>
+                        <p>شركت در نظرسنجی</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>                                               <!-- 7 -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">shop</i>
+                        <p>سفارش تبليغات</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="display-none small-show">                          <!-- display-none -->
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">shopping_cart</i>
+                        <p>فروشگاه</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="display-none small-show">
+                    <div class="menu-item-wrapper">
+                      <a href="#" class="menu-item no-decor">
+                        <i class="material-icons">call</i>
+                        <p>تماس با ما</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="bottom-menu">
+                  <li class="bottom-menu-item-wrapper">
+                    <div>
+                      <a class="bottom-menu-item show no-decor" href="#">
+                        <i class="material-icons">home</i>
+                        <p>خانه</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bottom-menu-item-wrapper">
+                    <div>
+                      <a class="bottom-menu-item show no-decor" href="#">
+                        <i class="material-icons">person</i>
+                        <p>پروفايل</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bottom-menu-item-wrapper">
+                    <div>
+                      <a class="bottom-menu-item show no-decor" href="#">
+                        <i class="material-icons">help</i>
+                        <p>پشتیبانی</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <li class="btn-animated-border">
+          <span><a href="#">صفحه اصلی</a></span>
+        </li>
+        <li class="btn-animated-border">
+          <span><a href="#">فروشگاه</a></span>
+        </li>
+        <li class="btn-animated-border">
+          <span><a href="#">سبد خرید</a></span>
+        </li>
+        <li class="btn-animated-border">
+          <span><a href="#">تماس با ما</a></span>
+        </li>
+
+      </ul>
+      
+      <div class="search-container hide-on-small">
+        <input type="checkbox" id="search" accesskey="s" hidden>
+        <div class="search-content">
+          <input type="text" id="search-text" placeholder="واژه کلیدی...">
+          <label for="search" title="Alt + Shift + S">
+            <i class="material-icons trns">search</i>
+          </label>
+          <p>واژه کلیدی...</p>
+        </div>
+      </div>
+
+    </nav>
+
+  </header>
+  
+  <div class="modal-wrapper" id="popover-cart" popover="manual">
+    <div class="popover-cart-container">
+      <div class="cart-header">
+        <h2>
+          سبد خريد
+        </h2>
+      </div>
+      <div class="cart-list">
+        <ul>
+          <input class="delete-cart" type="radio" id="delete-cart-1" hidden>
+          <li>
+            <div class="cart-list-img small-hide">
+              <img class="img" src="./assets/images/win11.webp">
+            </div>
+            <span class="cart-list-text">
+              سیستم عامل ویندوز 11 نسخه پرو
+            </span>
+            <div class="cart-list-counter small-hide">
+              <button id="dec">-</button>
+              <span >1</span>
+              <button id="inc">+</button>
+            </div>
+            <span class="cart-list-price">
+              <h5>15,000,000</h5>
+              <span>ريال</span>
+              <label for="delete-cart-1" class="icon-holder icon-holder-36">
+                <i class="material-icons md-36">delete_forever</i>
+              </label>
+            </span>
+          </li>
+
+          <input class="delete-cart" type="radio" id="delete-cart-2" hidden>
+          <li>
+            <div class="cart-list-img small-hide">
+              <img class="img" src="./assets/images/vs.webp">
+            </div>
+            <span class="cart-list-text">
+              مجموعه نرم افزار  2024
+            </span>
+            <div class="cart-list-counter small-hide">
+              <button id="dec">-</button>
+              <span>2</span>
+              <button id="inc">+</button>
+            </div>
+            <span class="cart-list-price">
+              <h5>15,000,000</h5>
+              <span>ريال</span>
+              <label for="delete-cart-2" class="icon-holder icon-holder-36">
+                <i class="material-icons md-36">delete_forever</i>
+              </label>
+            </span>
+          </li>
+
+          <input class="delete-cart" type="radio" id="delete-cart-3" hidden>
+          <li>
+            <div class="cart-list-img small-hide">
+              <img class="img" src="./assets/images/software.webp">
+            </div>
+            <span class="cart-list-text">
+              مجموعه نرم افزار ویژوال استودیو
+            </span>
+            <div class="cart-list-counter small-hide">
+              <button id="dec">-</button>
+              <span>3</span>
+              <button id="inc">+</button>
+            </div>
+            <span class="cart-list-price">
+              <h5>15,000,000</h5>
+              <span>ريال</span>
+              <label for="delete-cart-3" class="icon-holder icon-holder-36">
+                <i class="material-icons md-36">delete_forever</i>
+              </label>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-summary">
+        <div class="cart-summary-header">
+          <h6>جمع مبلغ</h6>
+          <h5>45,000,000</h5>
+          <span>ريال</span>
+        </div>
+        <div class="cart-summary-discount">
+          <input type="text" placeholder="كد تخفيف">
+          <button class="popover-cart-btn">اعمال</button>
+        </div>
+        <div class="popover-checkout">
+          <button class="popover-cart-btn hover-green">تكميل خريد</button>
+          <button class="popover-cart-btn hover-red" popovertargetaction="hide" popovertarget="popover-cart" autofocus>انصراف</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="f-b-menu display-none small-show">
+    <ul class="f-b-menu-container">
+        <li class="f-b-menu-item-wrapper">
+          <div>
+            <a class="f-b-menu-item show no-decor" href="#">
+              <i class="material-icons">home</i>
+              <p>خانه</p>
+            </a>
+          </div>
+        </li>
+        <li class="f-b-menu-item-wrapper">
+          <div>
+            <a class="f-b-menu-item show no-decor" href="#">
+              <i class="material-icons">person</i>
+              <p>پروفايل</p>
+            </a>
+          </div>
+        </li>
+        <li class="f-b-menu-item-wrapper">
+          <div>
+            <a class="f-b-menu-item show no-decor" href="#">
+              <i class="material-icons">help</i>
+              <p>پشتیبانی</p>
+            </a>
+          </div>
+        </li>
+        <li class="f-b-menu-item-wrapper">
+          <button popovertarget="popover-cart" popovertargetaction="show">
+            <a class="f-b-menu-item show no-decor">
+              <i class="material-icons">add_shopping_cart</i>
+              <p>سبد خريد</p>
+            </a>
+          </button>
+        </li>
+    </ul>
+  </div>
+
+</body>
+</html>

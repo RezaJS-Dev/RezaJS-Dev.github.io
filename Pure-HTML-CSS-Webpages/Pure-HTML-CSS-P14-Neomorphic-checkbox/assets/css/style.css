@@ -1,0 +1,262 @@
+:root {
+    --bc: rgba(199, 201, 230, 0.99);
+    --bs-c: -3px -3px 7px rgba(255,255,255,0.7), 2px 2px 5px rgba(96,105,122,0.3);
+    --bs-ci: -3px -3px 7px rgba(255,255,255,0.7) inset, 2px 2px 5px rgba(96,105,122,0.3) inset;
+    --bs-s: -2px -2px 4px rgba(255,255,255,0.7), 2px 2px 4px rgba(96,105,122,0.3);
+    --bs-si: -2px -2px 4px rgba(255,255,255,0.7) inset, 2px 2px 4px rgba(96,105,122,0.3) inset;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bc);
+    display: flex;
+    justify-content: center;
+}
+
+.scale-control-box {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #c7c9e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    box-shadow: var(--bs-c);
+    color: #4e59ff;
+    z-index: 10;
+}
+
+input#scale-controler:checked {
+    ~ label.scale-control-box {
+        box-shadow: var(--bs-ci);
+        font-size: 0.9rem;
+    }
+
+    ~ .container {
+        transform: scale(0.52);
+        min-width: 150%;
+        max-height: 90vh;
+    }
+}
+
+.container {
+    width: 100%;
+    background-color: var(--bc);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 0fr);
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 90%;
+    gap: 7rem;
+    transform-origin: 50% 0;
+
+    & > div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 0fr));
+        justify-content: center;
+        gap: 50px;
+    }
+
+    & > div:nth-child(3) {
+        align-content: center;
+    }
+}
+
+.flip-card {
+
+    perspective: 1000px;
+    
+    & label {
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        position: relative;
+    
+        & .flip-card-face {
+            width: 310px;
+            height: 100%;
+            padding: 1.5rem 1.5rem 0 1.5rem;
+            margin: auto auto;
+            background-color: var(--bc);
+            box-shadow: var(--bs-c);
+            border-radius: 2.2rem;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+        }
+    
+        & .back {
+            transform: rotateY(180deg);
+            background-color: rgb(217 219 241 / 99%);
+            box-shadow: -4px -3px 7px rgba(255,255,255,0.7), 4px 2px 5px rgba(56,75,82,0.25);
+        }
+    }
+}
+
+.card {
+    width: 310px;
+    height: 100%;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin: auto auto;
+    background-color: var(--bc);
+    box-shadow: var(--bs-c);
+    position: relative;
+    border-radius: 2.2rem;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+}
+
+.sign {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: var(--bc);
+    position: absolute;
+    box-shadow: var(--bs-si);
+}
+
+.contents {
+    padding: 2rem 1rem 0 1rem;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-item {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-item::before {
+    content: '';
+    display: block;
+    background-image: url("../images/37156945.png");
+}
+
+.image-item.c-1::before {
+    background-position: 0 -11px;
+    width: 232px;
+    height: 136px;
+}
+
+.image-item.c-2::before {
+    background-position: -272px -13px;
+    width: 190px;
+    height: 138px;
+}
+
+.image-item.c-3::before {
+    background-position: -491px -34px;
+    width: 216px;
+    height: 118px;
+}
+
+.image-item.c-4::before {
+    background-position: -738px -1px;
+    width: 130px;
+    height: 154px;
+} 
+
+.image-item.c-5::before {
+    background-position: -34px -172px;
+    width: 192px;
+    height: 140px;
+}
+
+.image-item.c-6::before {
+    background-position: -271px -162px;
+    width: 190px;
+    height: 120px;
+}
+
+.image-item.c-7::before {
+    background-position: -530px -170px;
+    width: 142px;
+    height: 116px;
+}  
+
+.image-item.c-8::before {
+    background-position: -738px -170px;
+    width: 146px;
+    height: 116px;
+}  
+
+.image-item.c-9::before {
+    background-position: -55px -332px;
+    width: 158px;
+    height: 106px;
+}  
+
+.image-item.c-10::before {
+    background-position: -284px -312px;
+    width: 160px;
+    height: 128px;
+} 
+  
+.image-item.c-11::before {
+    background-position: -519px -449px;
+    width: 142px;
+    height: 134px;
+}   
+
+.text {
+    margin: 2rem 1rem;
+}
+
+.text h4 {
+    text-align: center;
+    color: rgba(100, 100, 100, 1.0);
+    user-select: none;
+}
+
+.text p {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: rgba(100, 100, 100, 1.0);
+    user-select: none;
+}
+
+.container > div:nth-child(1) input:checked + label {
+    transform: rotateY(180deg);
+}
+
+.container > div:nth-child(n+2) input:checked + label div.card {
+    box-shadow: var(--bs-ci);
+    background-image: radial-gradient( circle, rgba(232, 233, 249, 0.76) 0 18%, rgba(222, 224, 255, 0.99) 30% 32%, transparent 50% 10% );
+}
+
+.container > div:nth-child(n+2) input:checked + label div.sign {
+    box-shadow: var(--bs-s);
+    width: 31px;
+    height: 31px;
+    top: 17px;
+    left: 17px;
+}
+
+.container > div:nth-child(n+2) input:checked + label div.contents {
+    transform: scale(0.98);
+}
+
+label {
+    height: 400px;
+    cursor: pointer;
+}
+
+label[for="c-7"] {
+    cursor: not-allowed;
+}

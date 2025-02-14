@@ -1,0 +1,11 @@
+
+
+@font-face {
+        font-family: 'Pollistons';
+        src: url( 'Pollistons-Serif.eot' ) format( 'embedded-opentype' ),
+             url( 'Pollistons-Serif.woff' ) format( 'woff' ),
+             url( 'Pollistons-Serif.otf' ) format( 'opentype' ),
+             url( 'Pollistons-Serif.ttf' ) format( 'truetype' );
+        font-weight: normal;
+        font-style: normal;
+}

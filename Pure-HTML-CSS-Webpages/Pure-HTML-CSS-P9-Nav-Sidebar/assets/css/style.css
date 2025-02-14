@@ -1,0 +1,257 @@
+:root {
+    --bc: rgba(238, 122, 77, 0.37);
+    --dh: rgba(210, 210, 250, 1.0);
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/bg.jpg");
+    background-size: 100% 100%;
+}
+
+.side-nav-wrapper {
+    max-height: 95%;
+    background-color: var(--bc);
+    border-radius: 0 16px 16px 0;
+    border: 2px solid rgba(238, 122, 77, 0.60);;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+
+.content {
+    padding: 1.2rem 0;
+    width: 68px;
+    user-select: none;
+    transition: width 0.25s ease-out;
+    -webkit-transition: width 0.25s ease-out;
+    -moz-transition: width 0.25s ease-out;
+    -ms-transition: width 0.25s ease-out;
+    -o-transition: width 0.25s ease-out;
+}
+
+.content > li {
+    margin: 2rem 0rem 2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 1.0);
+    overflow: hidden;
+    border-radius: 12px;
+    width: 95%;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+.content > li:hover {
+    background-color: rgb(28, 133, 196);
+    color: rgb(234, 230, 16);
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+.icons {
+    margin-left: 1rem;
+}
+
+.badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(238, 1, 1);
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 34px;
+    font-size: 1.3rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.badge::before {
+    content:  attr(data-number) "";
+}
+
+.badge:hover {
+    color: #DEA;
+    background-color: rgba(238, 1, 1, 0.8);
+}
+
+input#side {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: -20px;
+}
+
+input#side:focus ~ ul.content > li > .nav-text  {
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 2rem;
+    min-width: 100px;
+    opacity: 1;
+    transform: translate(0);
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+label[for="side"] {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0,0,0,1);
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    position: absolute;
+    transform: translate(57px,10px); 
+    transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -ms-transition: transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+}
+
+label[for="side"]:hover {
+    background-color: var(--dh);
+    color: #222;
+}
+
+label[for="side"] > i.la {
+    font-size: 2rem;
+    text-align: center;
+    transform: translate(2px,2px);
+    transform-origin: 11px 11px;
+    transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -webkit-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -moz-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -ms-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -o-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+}
+
+
+input#side:focus ~ ul.content {
+    width: 180px;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+
+}
+
+input#side:focus ~ label[for="side"] {
+    transform: translate(168px,10px);
+    transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -ms-transition: transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+}
+
+input#side:focus ~ label[for="side"] > i.la {
+    transform: translate(2px,1px);
+    transform: rotate(180deg);
+    transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -webkit-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -moz-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -ms-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+    -o-transition: transform 0.25s 0.05s cubic-bezier(.6,-0.28,.74,.05);
+}
+
+input#side:not(:focus) ~ ul.content > li > .nav-text {
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    min-width: 100px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+input#side:not(:focus) ~ ul.content > li {
+    width: 85%;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .side-nav-container {
+        position: relative;
+    }
+
+    .side-nav-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .side-nav-wrapper {
+        background-color: rgba(0, 0, 0, 0.51);
+        border: 2px solid rgb(223, 199, 190);
+    }
+
+    .content > li {
+        color: rgba(255, 255, 255, 1.0);
+    }
+
+    label[for="side"] {
+        background-color: rgba(255,255,255,1);
+        color: #000;
+    }
+
+    label[for="side"]:hover {
+        background-color: rgb(2, 2, 153);
+        color: #DDD;
+    }
+}
+
+@media screen and (max-height: 475px) {
+
+    .side-nav-container {
+        min-height: 320px;
+    }
+
+    .content > li {
+        margin: 0.5rem 0rem 0.5rem 0.1rem;
+    }
+    
+    .la-4x {
+        font-size: 3.5em !important;
+    }
+}
+
+/**/

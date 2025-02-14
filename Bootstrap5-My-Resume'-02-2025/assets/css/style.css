@@ -1,0 +1,266 @@
+@import url(../fonts/tanha/tanha.css);
+@import url(../fonts/yekan/yekan.css);
+
+:root {
+    --bs-body-font-family: Yekan, Tanha, Arial;
+    --bs-body-bg: #f0f8ff;
+}
+
+html {
+    direction: rtl;
+    & article, 
+      article p {
+        text-align: justify;
+    }
+    & .font-en {
+        font-family: Arial;
+    }
+}
+
+.ltr {
+    direction: ltr;
+}
+
+a {
+    text-decoration: none;
+}
+
+.filter-hover {
+    color: rgba(230, 240, 230, 0.75);
+    filter: sepia(0.4) grayscale(0.4);
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+
+    &:hover {
+        color: rgba(230, 240, 230, 1);
+        text-shadow: 2px 2px #999;;
+        filter: sepia(0) grayscale(0);
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
+    }
+}
+
+.container-c {
+    max-width: 1060px;
+    margin: 0 auto;
+
+    & header {
+        @media screen and (min-width: 693px) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.card-shadow {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.p-8 {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.hr {
+
+    &:not(:last-of-type)::after {
+        content: "";
+        border-bottom: 1px solid rgba(150, 150, 150, 0.4);
+        width: 100%;
+        height: auto;
+        padding: 8px 8px;
+        display: block;
+    }
+
+    &:last-of-type::after {
+        content: "";
+        border-bottom: 1px solid rgba(150, 150, 150, 0.0);
+        width: 100%;
+        height: auto;
+        padding: 8px 8px;
+        display: block;
+    }
+}
+
+@counter-style persian {
+    system: numeric;
+    symbols: '\6F0' '\6F1' '\6F2' '\6F3' '\6F4' '\6F5' '\6F6' '\6F7' '\6F8' '\6F9';
+}
+
+ul.list-style-disk {
+    font-family: Yekan, Arial;
+
+    & li {
+        list-style-type: persian;
+    }
+}
+
+li.text-overflow p {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.progress {
+    background-color: #d0dde8;
+
+    & div {
+        border-radius: var(--bs-border-radius);
+        width: calc(var(--w) * 1%);
+
+        &::before { 
+            counter-reset: w var(--w);
+            content: counter(w) "%";
+        }
+    }
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #0d6efe;
+}
+
+.progress-bar-animated {
+    animation: skill-load 0.45s ease-in-out forwards ;
+    -webkit-animation: skill-load 0.45s ease-in-out forwards ;   
+}
+
+@keyframes skill-load {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        width: calc(var(--w) * 1%);
+        opacity: 1;
+    }
+}
+
+body > footer {
+    background: radial-gradient(circle farthest-corner at 50% 100%,rgb(12, 110, 253) 34%,rgb(2, 10, 153));
+
+    & p:last-of-type {
+        font-family: Arial;
+    }
+}
+
+/* footer social network links */
+
+body > footer > div > a {
+    position: relative;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+body > footer > div > a > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.0rem;
+    width: 3.0rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+body > footer > div > a:hover > i {
+    color: #FFF;
+}
+
+body > footer > div > a:hover > .bi-whatsapp, 
+body > footer > div > a:nth-child(1):hover > .tooltip-social > span,
+body > footer > div > a:nth-child(1):hover > .tooltip-social::after {
+    background-color: #25d366;
+    border-color: #25d366;
+}
+body > footer > div > a:hover > .bi-github , 
+body > footer > div > a:nth-child(2):hover > .tooltip-social > span,
+body > footer > div > a:nth-child(2):hover > .tooltip-social::after {
+    background-color: #000;
+    border-color: #000;
+}
+body > footer > div > a:hover > .bi-instagram , 
+body > footer > div > a:nth-child(3):hover > .tooltip-social > span,
+body > footer > div > a:nth-child(3):hover > .tooltip-social::after {
+    background-color: #e1306c;
+    border-color: #e1306c;
+}
+body > footer > div > a:hover > .bi-youtube , 
+body > footer > div > a:nth-child(4):hover > .tooltip-social > span,
+body > footer > div > a:nth-child(4):hover > .tooltip-social::after {
+    background-color: #DE463B;
+    border-color: #DE463B;
+}
+body > footer > div > a:hover > .bi-pinterest , 
+body > footer > div > a:nth-child(5):hover > .tooltip-social > span,
+body > footer > div > a:nth-child(5):hover > .tooltip-social::after {
+    background-color: #e13030;
+    border-color: #e13030;
+}
+body > footer > div > a:hover > .bi-twitter , 
+body > footer > div > a:nth-child(6):hover > .tooltip-social > span,
+body > footer > div > a:nth-child(6):hover > .tooltip-social::after {
+    background-color: #46C1F6;
+    border-color: #46C1F6;
+}
+
+.tooltip-social {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tooltip-social span {
+    padding: 0.4rem 1.1rem;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 1rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.tooltip-social::after {   /* arrow under the tooltip */
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-right: 15px solid #fff;
+    border-bottom: 15px solid #fff;
+    transform: translateX(50%) rotate(45deg);
+    position: absolute;
+    bottom: -8%;
+    right: 50%;
+    z-index: 1;
+}
+
+body > footer > div > a:hover > .tooltip-social,
+body > footer > div > a:hover > .tooltip-social > span {
+    opacity: 1;
+    bottom: 130%;
+    pointer-events: auto;
+}
+
+/* All transitions */
+
+body > footer > div > a,
+body > footer > div > a:hover,
+body > footer > div > a > i, 
+body > footer > div > a:hover > i,
+.tooltip-social,
+.tooltip-social span, 
+.tooltip-social::after, 
+body > footer > div > a:hover > .tooltip-social,
+body > footer > div > a:hover > .tooltip-social > span {
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -moz-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -ms-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -o-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}

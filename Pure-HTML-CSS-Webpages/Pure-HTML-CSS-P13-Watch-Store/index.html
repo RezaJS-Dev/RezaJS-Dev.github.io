@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pure-HTML-CSS-Project-13</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-basic.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="large-container-header">
+            <div class="main-header">
+                <a class="logo-header" href="#"></a>
+                <div class="search-box">
+                    <form>
+                        <input type="search" name="" placeholder="جستجو..." autofocus>
+                        <button type="submit" class="btn-search">
+                            <img class="icon-holder" src="./assets/svg/search-solid.svg">
+                        </button>
+                    </form>
+                </div>
+                <div class="btn-header-wrapper">
+                    <button class="btn-header login">
+                        <img class="icon-holder" src="./assets/svg/sign-in-alt-solid.svg">
+                        ورود  | ثبت نام
+                        <span class="gift"></span>
+                    </button>
+                    <button class="btn-header cart">
+                        <img class="icon-holder" src="./assets/svg/shopping-bag-solid.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="nav-header">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="active">
+                                <img class="icon-holder" src="./assets/svg/home-solid.svg">
+                                <span class="nav-link-text">خانه</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="border-hover">
+                                <img class="icon-holder" src="./assets/svg/snapp.svg">
+                                <span class="nav-link-text">خريد اقساطي</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="border-hover">
+                                <img class="icon-holder" src="./assets/svg/truck-solid.svg">
+                                <span class="nav-link-text">روش ارسال</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="border-hover">
+                                <img class="icon-holder" src="./assets/svg/dice-d20-solid.svg">
+                                <span class="nav-link-text">قرعه كشي</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="border-hover">
+                                <img class="icon-holder" src="./assets/svg/phone-volume-solid.svg">
+                                <span class="nav-link-text">تماس با ما</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <content class="large-container">
+
+        <div class="content-wrapper">
+            <h1 class="content-item-1">
+                جديدترين ساعت ها
+            </h1>
+            <div class="content-item-2">
+                <button>
+                    <a href="#brand-wrap">
+                    ببين و انتخاب كن
+                    </a>
+                </button>
+            </div>
+
+            <input type="radio" name="banner" id="content-control-1" hidden checked>
+            <input type="radio" name="banner" id="content-control-2" hidden>
+            <input type="radio" name="banner" id="content-control-3" hidden>
+            <input type="radio" name="banner" id="content-control-4" hidden>
+
+            <div class="content-watch content-item-3">
+                <img src="./assets/products/1-thumb.webp">
+                <img src="./assets/products/2-thumb.webp">
+                <img src="./assets/products/3-thumb.webp">
+                <img src="./assets/products/4-thumb.webp">
+            </div>
+            <div class="content-caption content-item-4">
+                <div class="caption-1">
+                    <h2>مدرن</h2>
+                    <p>Ad magna occaecat sed et fugiat est do eu sit proident sint reprehenderit dolore cupidatat.</p>
+                </div>                
+                <div class="caption-2">
+                    <h2>كلاسيك</h2>
+                    <p>Sit in elit dolor sed ea anim proident fugiat ut elit et do officia ut tempor nulla incididunt sint ea sed ea nostrud.</p>
+                </div>                
+                <div class="caption-3">
+                    <h2>ديجيتال</h2>
+                    <p>Lorem ipsum do est exercitation dolor laborum duis irure dolore esse consequat sunt tempor dolore nulla.</p>
+                </div>
+                <div class="caption-4">
+                    <h2>ورزشی</h2>
+                    <p>Ad magna occaecat sed et fugiat est do eu sit proident sint reprehenderit dolore cupidatat.</p>
+                </div>
+            </div>
+            <div class="content-place content-item-5"></div>
+            <div class="content-selector content-item-6">
+                <label for="content-control-1">
+                    <div>
+                        <img src="./assets/products/1-thumb.webp" alt="thumbnail">
+                    </div>
+                    <span>ساعت  1</span>
+                </label>
+                <label for="content-control-2">
+                    <div>
+                        <img src="./assets/products/2-thumb.webp" alt="thumbnail">
+                    </div>
+                    <span>ساعت  2</span>
+                </label>
+                <label for="content-control-3">
+                    <div>
+                        <img src="./assets/products/3-thumb.webp" alt="thumbnail">
+                    </div>
+                    <span>ساعت  3</span>
+                </label>
+                <label for="content-control-4">
+                    <div>
+                        <img src="./assets/products/4-thumb.webp" alt="thumbnail">
+                    </div>
+                    <span>ساعت  4</span>
+                </label>
+            </div>
+            </div>
+
+        </div>
+
+    </content>
+
+    <main class="large-container">
+        
+        <section class="off-sec">
+            <div class="off-timer">
+                <div class="gift-img"></div>
+                <div class="timer-number">
+                    <span class="clock separator">20</span>
+                    <span class="clock separator">30</span>
+                    <span class="clock">45</span>
+                </div>
+                <div class="all-offs">
+                    <a href="#">مشاهده همه ></a>
+                </div>
+            </div>
+            <input type="radio" name="scroll-product" id="backward" checked hidden>
+            <label class="hide-medium" for="backward"></label>
+            <input type="radio" name="scroll-product" id="forward" hidden>
+            <label class="hide-medium" for="forward"></label>
+            <div class="products-main-grid hide-medium">
+                <div class="products-grid product-page-1">
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/1-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/2-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/3-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/4-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="products-grid product-page-2">
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/1-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/2-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/3-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-items">
+                        <a href="#" class="product-link" tabindex="-1">
+                            <div class="product-img">
+                                <img class="img" src="./assets/products/4-thumb.webp">
+                            </div>
+                            <div class="product-dsc">
+                                <span>ساعت مچی مردانه و زنانه</span>
+                            </div>
+                            <div class="product-sell">
+                                <div class="product-trnsport">
+                                    <div src="" class="trns-icon"></div>
+                                    <span>ارسال فوري</span>
+                                </div>
+                                <div class="product-price">
+                                    <div class="p-off">
+                                        <span class="del-prc">2,500,000</span>
+                                        <span class="off">30%</span>
+                                    </div>
+                                    <div class="p-net">
+                                        <span class="price">1,750,000</span>
+                                        <span class="unit">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="auto-slider-row">
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/1-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/2-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/3-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/4-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/1-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/2-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/3-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-items">
+                    <a href="#" class="product-link" tabindex="-1">
+                        <div class="product-img">
+                            <img class="img" src="./assets/products/4-thumb.webp">
+                        </div>
+                        <div class="product-dsc">
+                            <span>ساعت مچی مردانه و زنانه</span>
+                        </div>
+                        <div class="product-sell">
+                            <div class="product-trnsport">
+                                <div src="" class="trns-icon"></div>
+                                <span>ارسال فوري</span>
+                            </div>
+                            <div class="product-price">
+                                <div class="p-off">
+                                    <span class="del-prc">2,500,000</span>
+                                    <span class="off">30%</span>
+                                </div>
+                                <div class="p-net">
+                                    <span class="price">1,750,000</span>
+                                    <span class="unit">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="brand-wrap" id="brand-wrap">
+            <div class="top-sec">
+                <img class="img" src="./assets/svg/watch.svg">
+                <h4>محبوب ترين برندهای ساعت مچی</h4>
+                <div class="dotted-line"></div>
+                <a href="#" class="more">
+                    <span>مشاهده همه</span>
+                    <span class="more-arrow"></span>
+                </a>
+            </div>
+
+            <div class="main-sec">
+                <div class="slider-container">
+                    <input type="radio" name="brands" id="b-1" hidden />
+                    <input type="radio" name="brands" id="b-2" hidden />
+                    <input type="radio" name="brands" id="b-3" hidden />
+                    <input type="radio" name="brands" id="b-4" hidden />
+                    <input type="radio" name="brands" id="b-5" hidden />
+                    <input type="radio" name="brands" id="b-6" hidden />
+                    <input type="radio" name="brands" id="b-7" hidden />
+                    <input type="radio" name="brands" id="b-8" hidden />
+                    <input type="radio" name="brands" id="b-9" hidden />
+                    <input type="radio" name="brands" id="b-10" hidden />
+                    <input type="radio" name="brands" id="b-slide" hidden checked/>
+
+                    <div class="brands-list">
+                        <label for="b-1" class="brand-img-wrapper">
+                            <div class="b-1-img brand-pic"></div>
+                        </label>
+                        <label for="b-2" class="brand-img-wrapper">
+                            <div class="b-2-img brand-pic"></div>
+                        </label>
+                        <label for="b-3" class="brand-img-wrapper">
+                            <div class="b-3-img brand-pic"></div>
+                        </label>
+                        <label for="b-4" class="brand-img-wrapper">
+                            <div class="b-4-img brand-pic"></div>
+                        </label>
+                        <label for="b-5" class="brand-img-wrapper">
+                            <div class="b-5-img brand-pic"></div>
+                        </label>
+                        <label for="b-6" class="brand-img-wrapper">
+                            <div class="b-6-img brand-pic"></div>
+                        </label>
+                        <label for="b-7" class="brand-img-wrapper">
+                            <div class="b-7-img brand-pic"></div>
+                        </label>
+                        <label for="b-8" class="brand-img-wrapper">
+                            <div class="b-8-img brand-pic"></div>
+                        </label>
+                        <label for="b-9" class="brand-img-wrapper">
+                            <div class="b-9-img brand-pic"></div>
+                        </label>
+                        <label for="b-10" class="brand-img-wrapper">
+                            <div class="b-10-img brand-pic"></div>
+                        </label>
+                        <!-- <span class="animate-border"></span> -->
+                        
+                    </div>
+
+                    <div class="brand-picture-show">
+                        <div>
+                            <div class="for-b-1 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-1.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-1-s" class="bookmark-star" hidden>
+                                    <label for="b-1-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-1-h" class="favourite-heart" hidden>
+                                    <label for="b-1-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-2 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-2.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-2-s" class="bookmark-star" hidden>
+                                    <label for="b-2-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-2-h" class="favourite-heart" hidden>
+                                    <label for="b-2-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-3 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-3.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-3-s" class="bookmark-star" hidden>
+                                    <label for="b-3-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-3-h" class="favourite-heart" hidden>
+                                    <label for="b-3-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-4 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-4.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-4-s" class="bookmark-star" hidden>
+                                    <label for="b-4-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-4-h" class="favourite-heart" hidden>
+                                    <label for="b-4-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-5 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-5.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-5-s" class="bookmark-star" hidden>
+                                    <label for="b-5-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-5-h" class="favourite-heart" hidden>
+                                    <label for="b-5-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-6 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-6.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-6-s" class="bookmark-star" hidden>
+                                    <label for="b-6-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-6-h" class="favourite-heart" hidden>
+                                    <label for="b-6-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-7 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-7.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-7-s" class="bookmark-star" hidden>
+                                    <label for="b-7-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-7-h" class="favourite-heart" hidden>
+                                    <label for="b-7-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-8 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-8.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-8-s" class="bookmark-star" hidden>
+                                    <label for="b-8-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-8-h" class="favourite-heart" hidden>
+                                    <label for="b-8-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-9 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-9.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-9-s" class="bookmark-star" hidden>
+                                    <label for="b-9-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-9-h" class="favourite-heart" hidden>
+                                    <label for="b-9-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="for-b-10 hover-control">
+                                <img class="brand-pic-rel" src="./assets/products/w-10.jpg">
+                                <div class="brands-control">
+                                    <input type="checkbox" id="b-10-s" class="bookmark-star" hidden>
+                                    <label for="b-10-s" class="btn-header">
+                                        <span class="star-img"></span>
+                                    </label>
+                                    <input type="checkbox" id="b-10-h" class="favourite-heart" hidden>
+                                    <label for="b-10-h" class="btn-header">
+                                        <span class="heart-img"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="hover-control slide-brands">
+                                <div class="slide-brands-caption"></div>
+                                <span class="animate-border"></span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
