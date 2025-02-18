@@ -352,7 +352,7 @@ label.menu-btn {
 
     .nav-container {
         display: block;
-        max-width: 1020px;
+        max-width: min(84%,1020px);
         width: auto;
     }
 }
