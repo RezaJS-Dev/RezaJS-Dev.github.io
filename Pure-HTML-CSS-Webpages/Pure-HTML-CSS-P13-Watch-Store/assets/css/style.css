@@ -501,7 +501,7 @@ input#content-control-4:checked ~ .content-selector label[for=content-control-4]
           margin: 0 6px;
 
             & img {
-                width: 50%;
+                width: 60%;
                 height: 80%;
             }
         }
