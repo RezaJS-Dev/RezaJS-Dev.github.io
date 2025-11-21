@@ -92,6 +92,23 @@ ul.list-style-disk {
     & li {
         list-style-type: persian;
     }
+
+    &.list-with-links {
+        
+            & li {
+        
+                & p {
+                    color: #000;
+                }
+        
+                & span {
+                    display: flex;
+                    text-align: left;
+                    justify-content: end;
+                }
+            }
+    }
+
 }
 
 li.text-overflow p {
