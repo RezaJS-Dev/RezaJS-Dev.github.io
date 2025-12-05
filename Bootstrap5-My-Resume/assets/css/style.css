@@ -99,6 +99,8 @@ ul.list-style-disk {
         
                 & p {
                     color: #000;
+                    margin-top: 10px;
+                    margin-bottom: 0;
                 }
         
                 & span {
