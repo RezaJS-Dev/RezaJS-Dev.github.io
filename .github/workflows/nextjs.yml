@@ -2,7 +2,7 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["main"] # adjust if your default branch is different
+    branches: ["portfolio"] # adjust if your default branch is different
   workflow_dispatch:
 
 permissions:
