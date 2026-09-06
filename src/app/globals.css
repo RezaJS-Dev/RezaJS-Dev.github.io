@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/font1.woff2") format("woff2");
+}
+@font-face {
+  font-family: "font2";
+  src: url("@/assets/fonts/font2.woff2") format("woff2");
+}
+
+@theme {
+  /* --spacing: 1px; */
+  --font-display: "Poppins";
+  --color-warm-blue-50: #f1f3fd;
+  --color-warm-blue-100: #e0e3f9;
+  --color-warm-blue-200: #c7cef6;
+  --color-warm-blue-300: #a1afef;
+  --color-warm-blue-400: #7586e5;
+  --color-warm-blue-500: #4b57db;
+  --color-warm-blue-600: #4042d0;
+  --color-warm-blue-700: #3b36bf;
+  --color-warm-blue-800: #38329b;
+  --color-warm-blue-900: #302d7b;
+  --color-warm-blue-950: #221f4c;
+
+  --color-warm-blue-gradient: linear-gradient(
+    to left,
+    var(--color-warm-blue-700),
+    var(--color-warm-blue-950)
+  );
+
+  --color-wedgwood-50: #f2f7f9;
+  --color-wedgwood-100: #ddeaf0;
+  --color-wedgwood-200: #bfd6e2;
+  --color-wedgwood-300: #93b8cd;
+  --color-wedgwood-400: #5f92b1;
+  --color-wedgwood-500: #467a9b;
+  --color-wedgwood-600: #3b617f;
+  --color-wedgwood-700: #355169;
+  --color-wedgwood-800: #324658;
+  --color-wedgwood-900: #2d3c4c;
+  --color-wedgwood-925: oklab(0.31 -0.01 -0.03);
+  --color-wedgwood-950: #1a2532;
+
+  --color-wedgwood-gradient: linear-gradient(
+    to left,
+    var(--color-wedgwood-800),
+    var(--color-wedgwood-900)
+  );
+
+  @keyframes morph {
+    0% {
+      border-radius: 40% 60% 60% 40% / 70% 30%;
+    }
+    100% {
+      border-radius: 40% 60%;
+    }
+  }
+}
+@layer components {
+  .image-container {
+    border-radius: 60% 40% 47% 53% / 32% 55% 45% 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vmax;
+    max-width: 410px;
+    height: 28vmax;
+    max-height: 380px;
+    overflow: hidden;
+    will-change: border-radius, transform;
+    pointer-events: none;
+    animation: 8s ease-in-out 0s infinite alternate none running morph;
+  }
+}
+
+/* Default (shade 600) */
+@utility text-main-color {
+  color: var(--color-wedgwood-600);
+}
+
+/* Dynamic shades (if they exist) */
+@utility text-main-color-* {
+  color: --value(--color-wedgwood-*);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+[class*="dark:"] {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animated Cards Section */
+
+.animated-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  /* Initial hidden state */
+  opacity: 0;
+  transform: translateY(40px);
+
+  /* Smooth transition */
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.9, 0.3, 1),
+    transform 0.7s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+/* Visible state */
+.animated-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
